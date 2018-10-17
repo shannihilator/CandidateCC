@@ -1,0 +1,20 @@
+{% extends "people/home.html" %}
+
+{% block content %}
+  <br>
+  
+  <h2>Frequency count of characters found in emails</h2>
+  <table class="center">
+    <tr>
+      <th>Character</th>
+      <th>Count</th>
+    </tr>
+   
+    {% for c in characters %}
+	  <tr>
+        <td>{{c.0}}</td>
+        <td>{{c.1}}</td>
+    </tr>
+    {% endfor %}
+	</table>
+{% endblock %}

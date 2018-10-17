@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>SalesLoft API People Data</title>
+	<meta charset="utf-8" />
+	<style type="text/css">
+		body {
+		  height:100%;	
+		}
+		table {
+			border-collapse: collapse;
+			width: 90%;
+			background-color: lightblue;
+		}
+		table.center {
+			margin-left: auto;
+			margin-right: auto;
+		}
+		table, th, td {
+        	border: 2px solid black;
+        	text-align: middle;
+			vertical-align: middle;
+			padding: 10px;
+			font-family: "Verdana", Sans-serif;
+      	}
+      	h1,h2 {
+    		text-align: center;
+    		font-family: "Verdana", Sans-serif;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>SalesLoft People Data</h1>
+	<ul class="nav nav-pills nav-stacked">
+		<li><a href='/people/'>People data table</a></li>
+		<li><a href='/chars/'>Character frequency count</a></li>
+	</ul>
+	{% block content %}
+	{% endblock %}	
+
+</body>
+</html>
